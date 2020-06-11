@@ -20,6 +20,8 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		
 		driver = new ChromeDriver();
 		
+		System.out.println("Set up script runnig");
+		
 		
 	}
 }
