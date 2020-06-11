@@ -1,7 +1,9 @@
 package runnerPackage;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -12,6 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 	public static WebDriver driver;
+	
 	
 	@BeforeTest
 	public void setUp() {
@@ -25,4 +28,15 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		System.out.println("my first cucumber test");
 		
 	}
+	
+	
+	@AfterTest
+	public void tearDown() {
+		
+		driver.quit();
+		
+	}
+	
+	
+	
 }
