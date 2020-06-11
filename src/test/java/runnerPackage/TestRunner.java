@@ -22,6 +22,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		
 		System.out.println("Set up script runnig");
 		
+		System.out.println("my first cucumber test");
 		
 	}
 }
